@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.solera.methods.ModifiedMaze;
 
 @Controller
+@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.PUT, RequestMethod.POST})
 public class CarController {
 	
 	String highestPlayer = "";
